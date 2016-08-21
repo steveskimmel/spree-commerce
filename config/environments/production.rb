@@ -98,4 +98,6 @@ Rails.application.configure do
   # saved to your application's app/compiled_views directory.
   # https://github.com/spree/deface#production--precompiling
   config.deface.enabled = false
+  config.action_mailer.perform_deliveries = false
+
 end

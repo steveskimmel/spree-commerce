@@ -5,7 +5,7 @@
     <div class="element-middle">
       <%= image_tag "fix_home/fix-logotype.png", class:"logo", alt:"Fix" %>
       <br>
-      <span class="logo-text">Fine Coffee Kits</span>
+      <span class="logo-text">Woolies To-Go</span>
     </div>
     <div class="element-right">
       <div id="link-to-cart">
@@ -20,48 +20,9 @@
     </div>
   </div>
 
-  <div class="masthead-elements-row-2">
-    <div class="element-middle">
-      <%= link_to '/t/kit', class: "btn btn-default" do %>Browse Kits<% end %>
-      <%= link_to '/products', class: "btn btn-trans" do %>Browse Products<% end %>
-    </div>
-  </div>
-
 </header>
-<section class="textured-section">
 
-  <h1>Curated Coffee Components</h1>
-
-  <ul class="products">
-  <% cache(cache_key_for_taxon_children('featured')) do %>
-    <%- Spree::Taxon
-        .where(permalink: 'featured')
-        .first
-        .products.each do |product| -%>
-      <li>
-        <%= link_to product, class: "hot-link" do %>
-          <%= large_image(product,  class: "product-image", alt: "") %>
-          <h3 class="product-name"><%= product.name %></h3>
-        <% end %>
-        <div class="product-price"><%= product.display_price.to_html %></div>
-        
-        <%= form_for :order, url: populate_orders_path do |f| %>
-          <%= hidden_field_tag "variant_id", product.master.id %>
-          <%= hidden_field_tag "quantity", 1 %>
-          <div class="kit-button"><%= button_tag type: :submit, class: "btn btn-hot" do %>
-            Add to Cart
-          <% end %></div>
-        <% end %>
-      </li>
-
-    <%- end -%>
-  <% end %>
-  </ul>
-
-</section>
-<section>
-
-  <h1>Complete Brewing Kits</h1>
+  <h1>Our Range of Products</h1>
 
   <ul class="kits">
   <% cache(cache_key_for_taxon_children('kit')) do %>
@@ -77,7 +38,7 @@
           <h3 class="kit-name"><%= kit.name %></h3>
         <% end %>
         <%- # Calculate kit prices
-        taxon_total = kit.products.inject(0.0) do |sum, product| 
+        taxon_total = kit.products.inject(0.0) do |sum, product|
           product.price_in(current_currency).price + sum
         end
         taxon_price = Spree::Price.new(currency: current_currency)
@@ -106,7 +67,7 @@
   <div class="trailer-logo">
     <%= image_tag "fix_home/fix-logotype.png", class:"logo", alt:"Fix" %>
     <br>
-    <span class="logo-text">Fine Coffee Kits</span>
+    <span class="logo-text">Woolies To-Go</span>
   </div>
 
   <div class="trailer-links">

@@ -21,7 +21,7 @@ require_dependency "#{Rails.root}/lib/spree_taxon_images"
 Spree.config do |config|
   # See Gem spree_core-3.0.1/app/models/spree/app_configuration.rb for all predefined preferences.
   config.logo = "logo/fix-logotype.png"
-
+  config.address_requires_state = false
   # defaults for US-based store
   config.currency = 'USD'
   if Spree::Country.table_exists?
@@ -55,3 +55,5 @@ paperclip_s3_config.each do |key, value|
   Spree::Taxon.attachment_definitions[:group][key.to_sym] = value
   Spree::Taxon.attachment_definitions[:style][key.to_sym] = value
 end
+
+Spree::PermittedAttributes.user_attributes.push :first_name, :last_name, :ww_card_number, :email, :password, :password_confirmation
