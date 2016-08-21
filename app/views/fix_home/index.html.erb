@@ -23,9 +23,10 @@
 </header>
 
   <h1>Food and Beverage Menu</h1>
-
-  <%= render partial: 'spree/shared/products', locals: { products: @products } %>
-
+  <div class="stacked-block listing-page">
+    <%= render partial: 'spree/shared/products', locals: { products: @products } %>
+  </div>
+  
 </section>
 <footer>
 
