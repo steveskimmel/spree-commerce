@@ -24,42 +24,7 @@
 
   <h1>Food and Beverage Menu</h1>
 
-  <ul class="kits">
-  <% cache(cache_key_for_taxon_children('kit')) do %>
-    <%- Spree::Taxon
-        .where(permalink: 'kit')
-        .first
-        .children.each do |kit| -%>
-      <li>
-        <%= link_to seo_url(kit), class: "hot-link" do %>
-          <% if kit.group_file_name %>
-            <%= image_tag kit.group.url, class: "kit-image", alt: "" %>
-          <% end %>
-          <h3 class="kit-name"><%= kit.name %></h3>
-        <% end %>
-        <%- # Calculate kit prices
-        taxon_total = kit.products.inject(0.0) do |sum, product|
-          product.price_in(current_currency).price + sum
-        end
-        taxon_price = Spree::Price.new(currency: current_currency)
-        taxon_price.price = taxon_total
-        -%>
-        <div class="kit-price"><%= taxon_price.display_price.to_html %></div>
-
-        <%= form_for :order, url: multi_populate_orders_path do |f| %>
-          <%- kit.products.each_with_index do |product, i| -%>
-            <%= hidden_field_tag "line_items[#{i}][variant_id]", product.master.id %>
-            <%= hidden_field_tag "line_items[#{i}][quantity]", 1 %>
-          <%- end -%>
-          <div class="kit-button"><%= button_tag type: :submit, class: "btn btn-hot" do %>
-            Add to Cart
-          <% end %></div>
-        <% end %>
-      </li>
-
-    <%- end -%>
-  <% end %>
-  </ul>
+  <%= render partial: 'spree/shared/products', locals: { products: @products } %>
 
 </section>
 <footer>
