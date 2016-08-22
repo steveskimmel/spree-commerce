@@ -16,7 +16,7 @@
   "env": {
     "AWS_S3_BUCKET": {
       "description": "Name of the S3 bucket where the images are hosted. By default, this is a shared, read-only bucket containing the FIX demo images.",
-      "value": "fix-coffee"
+      "value": "ww-store"
     },
     "AWS_ACCESS_KEY_ID": {
       "description": "Amazon Web Services key ID with write permissions to the S3 bucket. Required only if you plan to add/edit products & kits in Spree",
