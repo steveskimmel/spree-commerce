@@ -24,9 +24,9 @@
             <%= link_to image_tag(item.variant.images.first.attachment.url(:mini)), item.variant.product %>
           <% end %>
         </td>
-        <td data-hook="payment-info">
+        <span data-hook="payment-info">
           <h4><%= item.variant.product.name %></h4>
-        </td>
+        </span>
         <td data-hook="order_item_price" class="lead text-primary price"><span><%= item.single_money.to_html %></span></td>
         <td data-hook="order_item_qty" class="order-qty"><%= item.quantity %></td>
         <td data-hook="order_item_total" class="lead text-primary total"><span><%= item.display_amount.to_html %></span></td>
