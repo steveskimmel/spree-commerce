@@ -24,8 +24,8 @@
             <%= link_to image_tag(item.variant.images.first.attachment.url(:mini)), item.variant.product %>
           <% end %>
         </td>
-        <td data-hook="order_item_description" class="order-qty">
-          <h4><%= item.variant.product.name %></h4>
+        <td data-hook="order_item_description">
+          <%= item.variant.product.name %>
         </td>
         <td data-hook="order_item_price" class="lead text-primary price"><span><%= item.single_money.to_html %></span></td>
         <td data-hook="order_item_qty" class="order-qty"><%= item.quantity %></td>
