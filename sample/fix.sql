@@ -210,10 +210,6 @@ SELECT pg_catalog.setval('spree_product_option_types_id_seq', 1, false);
 -- Data for Name: spree_product_properties; Type: TABLE DATA; Schema: public; Owner: mars.hall
 --
 
-INSERT INTO spree_product_properties (id, value, product_id, property_id, created_at, updated_at, "position") VALUES (1, 'non-porous Borosilicate glass, polished wood, leather', 3, 1, '2015-07-15 23:58:22.176812', '2015-07-15 23:58:22.176812', 1);
-INSERT INTO spree_product_properties (id, value, product_id, property_id, created_at, updated_at, "position") VALUES (2, '5.25"', 3, 2, '2015-07-16 00:00:34.163595', '2015-07-16 00:00:34.163595', 2);
-INSERT INTO spree_product_properties (id, value, product_id, property_id, created_at, updated_at, "position") VALUES (3, '8.5"', 3, 3, '2015-07-16 00:00:34.223849', '2015-07-16 00:00:34.223849', 3);
-INSERT INTO spree_product_properties (id, value, product_id, property_id, created_at, updated_at, "position") VALUES (4, '30oz', 3, 4, '2015-07-16 00:00:34.254623', '2015-07-16 00:00:34.254623', 4);
 
 
 --
@@ -526,9 +522,9 @@ SELECT pg_catalog.setval('spree_tax_rates_id_seq', 1, false);
 -- Data for Name: spree_taxonomies; Type: TABLE DATA; Schema: public; Owner: mars.hall
 --
 
-INSERT INTO spree_taxonomies (id, name, created_at, updated_at, "position") VALUES (4, 'Featured on Home', '2015-08-25 16:56:18.909695', '2015-09-04 17:42:01.604806', 3);
-INSERT INTO spree_taxonomies (id, name, created_at, updated_at, "position") VALUES (3, 'Beans', '2015-08-04 20:51:45.743463', '2015-09-04 17:42:01.815475', 2);
-INSERT INTO spree_taxonomies (id, name, created_at, updated_at, "position") VALUES (2, 'Kit', '2015-07-02 21:32:03.072445', '2015-09-04 17:42:01.815475', 1);
+INSERT INTO spree_taxonomies (id, name, created_at, updated_at, "position") VALUES (4, 'Featured', '2015-08-25 16:56:18.909695', '2015-09-04 17:42:01.604806', 3);
+INSERT INTO spree_taxonomies (id, name, created_at, updated_at, "position") VALUES (3, 'Food', '2015-08-04 20:51:45.743463', '2015-09-04 17:42:01.815475', 2);
+INSERT INTO spree_taxonomies (id, name, created_at, updated_at, "position") VALUES (2, 'Beverages', '2015-07-02 21:32:03.072445', '2015-09-04 17:42:01.815475', 1);
 
 
 --
