@@ -94,7 +94,7 @@ SELECT pg_catalog.setval('spree_assets_id_seq', 64, true);
 
 INSERT INTO spree_calculators (id, type, calculable_id, calculable_type, created_at, updated_at, preferences) VALUES (1, 'Spree::Calculator::Shipping::FlatRate', 1, 'Spree::ShippingMethod', '2015-06-03 20:33:55.24138', '2015-06-03 20:34:02.618001', '---
 :amount: !ruby/object:BigDecimal 18:0.8E1
-:currency: USD
+:currency: ZAR
 ');
 
 
@@ -162,28 +162,28 @@ SELECT pg_catalog.setval('spree_payment_methods_id_seq', 1, true);
 -- Data for Name: spree_prices; Type: TABLE DATA; Schema: public; Owner: mars.hall
 --
 
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (3, 3, 49.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (4, 4, 59.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (5, 5, 89.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (6, 6, 229.00, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (7, 7, 19.00, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (8, 8, 4.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (9, 9, 29.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (10, 10, 24.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (11, 11, 34.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (12, 12, 24.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (45, 45, 39.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (46, 46, 37.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (47, 47, 9.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (48, 48, 19.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (49, 49, 29.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (50, 50, 29.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (51, 51, 13.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (52, 52, 39.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (53, 53, 14.99, 'USD', NULL);
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (1, 1, 22.99, 'USD', '2015-08-04 20:50:34.079276');
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (2, 2, 25.99, 'USD', '2015-08-04 20:50:44.739187');
-INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (54, 54, 13.99, 'USD', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (3, 3, 49.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (4, 4, 59.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (5, 5, 89.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (6, 6, 229.00, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (7, 7, 19.00, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (8, 8, 4.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (9, 9, 29.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (10, 10, 24.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (11, 11, 34.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (12, 12, 24.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (45, 45, 39.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (46, 46, 37.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (47, 47, 9.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (48, 48, 19.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (49, 49, 29.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (50, 50, 29.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (51, 51, 13.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (52, 52, 39.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (53, 53, 14.99, 'ZAR', NULL);
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (1, 1, 22.99, 'ZAR', '2015-08-04 20:50:34.079276');
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (2, 2, 25.99, 'ZAR', '2015-08-04 20:50:44.739187');
+INSERT INTO spree_prices (id, variant_id, amount, currency, deleted_at) VALUES (54, 54, 13.99, 'ZAR', NULL);
 
 
 --
@@ -263,7 +263,7 @@ INSERT INTO spree_products (id, name, description, available_on, deleted_at, slu
 
 This style of dripper is very hands-on- it allows infinite control over grind, water volume and temperature. The ceramic body is durable and helps prevent heat loss during the brewing cycle.', '2015-07-01 00:00:00', NULL, 'hario-v60-ceramic-coffee-dripper', '', '', NULL, 1, '2015-07-23 18:35:04.735538', '2015-09-02 18:25:56.549202', true, NULL);
 INSERT INTO spree_products (id, name, description, available_on, deleted_at, slug, meta_description, meta_keywords, tax_category_id, shipping_category_id, created_at, updated_at, promotionable, meta_title) VALUES (8, 'Frothing Thermometer', 'A frothing thermometer is an essential tool.  In certain brewing situations boiling can cause ingredients like milk to go bad. In order to create a high-quality froth and maximize the sugars in the milk, most ingredients must be heated to nearly boiling. Higher temperatures can lead to burning, curdling, and unpleasant taste or texture. This thermometer has a range of 30 to 220ºF. It will accurately measure the temperature when heating milk or Turkish coffee to frothing.', '2015-07-01 00:00:00', NULL, 'frothing-thermometer', '', '', NULL, 1, '2015-07-22 23:58:53.005911', '2015-09-04 00:44:57.009753', true, NULL);
-INSERT INTO spree_products (id, name, description, available_on, deleted_at, slug, meta_description, meta_keywords, tax_category_id, shipping_category_id, created_at, updated_at, promotionable, meta_title) VALUES (49, 'Cappuccino', 'An Italian coffee drink that is traditionally prepared with espresso, hot milk, and steamed milk foam. Cream may be used instead of milk and is often topped with cinnamon.', '2015-07-01 00:00:00', NULL, 'cappuccino', '', '', NULL, 1, '2015-07-23 20:17:12.265142', '2015-09-04 17:42:01.501522', true, NULL);
+INSERT INTO spree_products (id, name, description, available_on, deleted_at, slug, meta_description, meta_keywords, tax_category_id, shipping_category_id, created_at, updated_at, promotionable, meta_title) VALUES (49, 'ZARccino', 'An Italian coffee drink that is traditionally prepared with espresso, hot milk, and steamed milk foam. Cream may be used instead of milk and is often topped with cinnamon.', '2015-07-01 00:00:00', NULL, 'cappuccino', '', '', NULL, 1, '2015-07-23 20:17:12.265142', '2015-09-04 17:42:01.501522', true, NULL);
 INSERT INTO spree_products (id, name, description, available_on, deleted_at, slug, meta_description, meta_keywords, tax_category_id, shipping_category_id, created_at, updated_at, promotionable, meta_title) VALUES (53, 'Hacienda Carmona, Guatemala', 'Ritual single origin coffee beans from Honduras: Hacienda Carmona, Bourbón Typica,  This year’s selection is incredibly sweet- with flavors of mission fig and chocolate covered cherries.
 
 
@@ -591,27 +591,27 @@ SELECT pg_catalog.setval('spree_taxons_prototypes_id_seq', 1, false);
 -- Data for Name: spree_variants; Type: TABLE DATA; Schema: public; Owner: mars.hall
 --
 
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (1, 'RIT123', 12.00, NULL, NULL, NULL, '2015-08-04 20:50:34.34698', true, 1, NULL, 1, 'USD', true, NULL, '2015-08-04 20:50:34.34698', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (2, 'blue-bottle-catuai', 0.00, NULL, NULL, NULL, '2015-08-04 20:50:45.203171', true, 2, NULL, 1, 'USD', true, NULL, '2015-08-04 20:50:45.203171', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (12, 'hario-v60', 0.00, NULL, NULL, NULL, NULL, true, 12, NULL, 1, 'USD', true, NULL, '2015-08-20 20:54:13.457241', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (11, 'hario-skerton', 0.00, NULL, NULL, NULL, NULL, true, 11, NULL, 1, 'USD', true, NULL, '2015-08-20 20:54:13.600862', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (54, 'sov-maple-16pz', 0.00, NULL, NULL, NULL, NULL, true, 54, NULL, 1, 'USD', true, NULL, '2015-08-04 20:55:52.076751', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (4, 'hario-cold-brewer', 0.00, NULL, NULL, NULL, NULL, true, 4, NULL, 1, 'USD', true, NULL, '2015-08-06 01:47:43.9621', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (10, 'joco-120oz-black', 0.00, NULL, NULL, NULL, NULL, true, 10, NULL, 1, 'USD', true, NULL, '2015-08-06 01:47:44.256283', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (48, 'aerolatte-milk-frother', 0.50, 8.00, 1.00, 1.50, NULL, true, 48, NULL, 1, 'USD', true, NULL, '2015-08-31 15:08:15.641654', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (52, 'sg-papua-new-guinea-bunum-wo', 0.00, NULL, NULL, NULL, NULL, true, 52, NULL, 1, 'USD', true, NULL, '2015-09-03 22:50:49.294746', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (3, 'chemex-classic-6-cup', 0.00, 8.50, NULL, NULL, NULL, true, 3, NULL, 1, 'USD', true, NULL, '2015-09-04 00:44:56.734858', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (5, 'bonavita-1L-electric-kettle', 0.00, NULL, NULL, NULL, NULL, true, 5, NULL, 1, 'USD', true, NULL, '2015-09-04 00:44:56.817833', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (6, 'baratza-virtuoso', 4.00, 13.00, 4.00, 7.00, NULL, true, 6, NULL, 1, 'USD', true, NULL, '2015-09-04 00:44:56.870445', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (7, 'etekcity-scale', 0.00, NULL, NULL, NULL, NULL, true, 7, NULL, 1, 'USD', true, NULL, '2015-09-04 00:44:56.91151', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (8, 'update-thermometer', 0.00, NULL, NULL, NULL, NULL, true, 8, NULL, 1, 'USD', true, NULL, '2015-09-04 00:44:57.005463', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (51, 'bb-brazil-yellow-catuai', 0.00, NULL, NULL, NULL, NULL, true, 51, NULL, 1, 'USD', true, NULL, '2015-09-04 00:44:57.053977', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (49, 'aeropress', 1.00, 10.00, 4.00, 4.00, NULL, true, 49, NULL, 1, 'USD', true, NULL, '2015-09-04 17:42:01.494803', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (9, 'msr-reactor-stove', 0.00, NULL, NULL, NULL, NULL, true, 9, NULL, 1, 'USD', true, NULL, '2015-09-04 17:42:01.57371', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (46, 'cozyna-grinder', 0.00, NULL, NULL, NULL, NULL, true, 46, NULL, 1, 'USD', true, NULL, '2015-09-04 17:42:01.672063', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (50, 'snow-peak-h300-cup', 0.00, NULL, NULL, NULL, NULL, true, 50, NULL, 1, 'USD', true, NULL, '2015-09-04 17:42:01.724366', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (53, 'ritual-guatemala-hacienda-carmona', 0.00, NULL, NULL, NULL, NULL, true, 53, NULL, 1, 'USD', true, NULL, '2015-09-04 17:42:01.79365', 1);
-INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (45, 'bodum-chambord-34oz', 0.00, NULL, NULL, NULL, NULL, true, 45, NULL, 1, 'USD', true, NULL, '2015-08-20 16:59:05.291949', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (1, 'RIT123', 12.00, NULL, NULL, NULL, '2015-08-04 20:50:34.34698', true, 1, NULL, 1, 'ZAR', true, NULL, '2015-08-04 20:50:34.34698', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (2, 'blue-bottle-catuai', 0.00, NULL, NULL, NULL, '2015-08-04 20:50:45.203171', true, 2, NULL, 1, 'ZAR', true, NULL, '2015-08-04 20:50:45.203171', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (12, 'hario-v60', 0.00, NULL, NULL, NULL, NULL, true, 12, NULL, 1, 'ZAR', true, NULL, '2015-08-20 20:54:13.457241', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (11, 'hario-skerton', 0.00, NULL, NULL, NULL, NULL, true, 11, NULL, 1, 'ZAR', true, NULL, '2015-08-20 20:54:13.600862', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (54, 'sov-maple-16pz', 0.00, NULL, NULL, NULL, NULL, true, 54, NULL, 1, 'ZAR', true, NULL, '2015-08-04 20:55:52.076751', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (4, 'hario-cold-brewer', 0.00, NULL, NULL, NULL, NULL, true, 4, NULL, 1, 'ZAR', true, NULL, '2015-08-06 01:47:43.9621', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (10, 'joco-120oz-black', 0.00, NULL, NULL, NULL, NULL, true, 10, NULL, 1, 'ZAR', true, NULL, '2015-08-06 01:47:44.256283', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (48, 'aerolatte-milk-frother', 0.50, 8.00, 1.00, 1.50, NULL, true, 48, NULL, 1, 'ZAR', true, NULL, '2015-08-31 15:08:15.641654', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (52, 'sg-papua-new-guinea-bunum-wo', 0.00, NULL, NULL, NULL, NULL, true, 52, NULL, 1, 'ZAR', true, NULL, '2015-09-03 22:50:49.294746', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (3, 'chemex-classic-6-cup', 0.00, 8.50, NULL, NULL, NULL, true, 3, NULL, 1, 'ZAR', true, NULL, '2015-09-04 00:44:56.734858', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (5, 'bonavita-1L-electric-kettle', 0.00, NULL, NULL, NULL, NULL, true, 5, NULL, 1, 'ZAR', true, NULL, '2015-09-04 00:44:56.817833', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (6, 'baratza-virtuoso', 4.00, 13.00, 4.00, 7.00, NULL, true, 6, NULL, 1, 'ZAR', true, NULL, '2015-09-04 00:44:56.870445', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (7, 'etekcity-scale', 0.00, NULL, NULL, NULL, NULL, true, 7, NULL, 1, 'ZAR', true, NULL, '2015-09-04 00:44:56.91151', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (8, 'update-thermometer', 0.00, NULL, NULL, NULL, NULL, true, 8, NULL, 1, 'ZAR', true, NULL, '2015-09-04 00:44:57.005463', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (51, 'bb-brazil-yellow-catuai', 0.00, NULL, NULL, NULL, NULL, true, 51, NULL, 1, 'ZAR', true, NULL, '2015-09-04 00:44:57.053977', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (49, 'aeropress', 1.00, 10.00, 4.00, 4.00, NULL, true, 49, NULL, 1, 'ZAR', true, NULL, '2015-09-04 17:42:01.494803', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (9, 'msr-reactor-stove', 0.00, NULL, NULL, NULL, NULL, true, 9, NULL, 1, 'ZAR', true, NULL, '2015-09-04 17:42:01.57371', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (46, 'cozyna-grinder', 0.00, NULL, NULL, NULL, NULL, true, 46, NULL, 1, 'ZAR', true, NULL, '2015-09-04 17:42:01.672063', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (50, 'snow-peak-h300-cup', 0.00, NULL, NULL, NULL, NULL, true, 50, NULL, 1, 'ZAR', true, NULL, '2015-09-04 17:42:01.724366', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (53, 'ritual-guatemala-hacienda-carmona', 0.00, NULL, NULL, NULL, NULL, true, 53, NULL, 1, 'ZAR', true, NULL, '2015-09-04 17:42:01.79365', 1);
+INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (45, 'bodum-chambord-34oz', 0.00, NULL, NULL, NULL, NULL, true, 45, NULL, 1, 'ZAR', true, NULL, '2015-08-20 16:59:05.291949', 1);
 INSERT INTO spree_variants (id, sku, weight, height, width, depth, deleted_at, is_master, product_id, cost_price, "position", cost_currency, track_inventory, tax_category_id, updated_at, stock_items_count) VALUES (47, 'update-international-pitcher', 0.00, NULL, NULL, NULL, NULL, true, 47, NULL, 1, 'USD', true, NULL, '2015-08-20 16:59:05.597339', 1);
 
 
