@@ -1,6 +1,7 @@
 Spree::UserRegistrationsController.class_eval do
   def create
     @user = build_resource(spree_user_params)
+    cookies[:user_email] = @user.email
     resource_saved = resource.save
     yield resource if block_given?
     if resource_saved
